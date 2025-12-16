@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>태영버스 운전자 포털</title>
+    <style>
+        /* 1. 전체 기본 설정 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: #F0F2F5; /* 배경색: 은은한 회색 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 400px; /* 스마트폰 폭에 맞춤 */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* 2. 상단 제목 영역 */
+        .header {
+            margin-bottom: 25px;
+            padding-left: 10px;
+        }
+        .sub-title {
+            font-size: 16px;
+            color: #606060;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .main-title {
+            font-size: 32px;
+            color: #111111;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        /* 3. 중앙 카드 패널 (핵심 디자인) */
+        .card-panel {
+            background-color: white;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* 부드러운 그림자 */
+        }
+
+        /* 4. 버튼 공통 스타일 */
+        .menu-btn {
+            display: flex; /* 아이콘과 글자 정렬 */
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 60px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.1s;
+        }
+        .menu-btn:active {
+            transform: scale(0.98); /* 눌렀을 때 살짝 작아짐 */
+        }
+
+        /* 5. 버튼별 색상 (안드로이드 앱과 동일) */
+        .btn-check {
+            background-color: #5C6BC0;
+            color: white;
+        }
+        .btn-request {
+            background-color: #26A69A;
+            color: white;
+        }
+        .btn-log {
+            background-color: #42A5F5;
+            color: white;
+        }
+        .btn-notice {
+            background-color: #FFB74D;
+            color: #333333; /* 밝은 배경이라 어두운 글씨 */
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #AAAAAA;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <div class="header">
+            <div class="sub-title">오늘도 안전운행!</div>
+            <div class="main-title">태영버스<br>운전자 포털</div>
+        </div>
+
+        <div class="card-panel">
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScjA3WfuQKAuFcgfwLnw6D8XX3RhFZqqzEHxGxGzalajMZa_w/viewform?usp=header" class="menu-btn btn-check" target="_blank">
+                ✅&nbsp;&nbsp;운행 전 점호
+            </a>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbUrwd7cKxlDrleOlDMmLG9kLjDy0l93aT9gwLUVZjsRe6-g/viewform?usp=header" class="menu-btn btn-request" target="_blank">
+                📅&nbsp;&nbsp;월 배차 신청
+            </a>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSctIDSG-djYpm0vE-qlBFgi7-xMaTXoom6mNQXCVcd5pats6w/viewform?usp=header" class="menu-btn btn-log" target="_blank">
+                📋&nbsp;&nbsp;나의 배차 확인
+            </a>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfztgvvIL5yxbr_wxND1pyyzHUybtfL7UyLcDCicDdd7CR79Q/viewform?usp=header" class="menu-btn btn-notice" target="_blank">
+                📢&nbsp;&nbsp;회사 공지사항
+            </a>
+
+        </div>
+
+        <div class="footer">
+            Taeyoung Bus Corp.
+        </div>
+
+    </div>
+
+</body>
+</html>
